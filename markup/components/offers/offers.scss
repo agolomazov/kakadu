@@ -2,6 +2,7 @@
   position: relative;
   z-index: 1;
   width: 100%;
+  margin-bottom: 100px;
 }
 
 .offers-wrapper{
@@ -59,11 +60,19 @@
     width: 50%;
     margin-bottom: 40px;
   }
+
+  .offers{
+    margin-bottom: 60px;
+  }
 }
 
 @media all and (max-width: 570px){
   .offers-list{
       flex-direction: column;
      align-items: center;
+  }
+
+  .offers {
+    margin-bottom: 30px;
   }
 }
