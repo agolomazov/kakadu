@@ -23,7 +23,7 @@ html, body {
     height: 50px;
 }
 
-@media all and (max-width: 570px){
+@media all and (max-width: 940px){
     html, body{
         background: url(%=static=%assets/body/body-bg.jpg) no-repeat;
         background-attachment: fixed;

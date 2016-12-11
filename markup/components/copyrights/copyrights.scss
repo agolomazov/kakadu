@@ -1,1 +1,25 @@
+.copyrights{
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
 
+.copyrights-wrapper{
+  max-width: 1200px;
+  min-width: 290px;
+  margin: 0 auto 40px;
+}
+
+.copyrights-text{
+  color: $white;
+  font-family: $gothamRegular;
+  font-size: .75rem;
+  padding: 0;
+  margin: 0;
+}
+
+@media all and (max-width: 1240px){
+  .copyrights-wrapper{
+    margin: 0 20px;
+  }
+}

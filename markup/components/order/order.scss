@@ -1,7 +1,8 @@
 .order{
+  margin-bottom: 160px;
   position: relative;
-  z-index: 1;
   width: 100%;
+  z-index: 1;
 }
 
 .order-wrapper{
@@ -32,6 +33,10 @@
 }
 
 @media all and (max-width: 940px){
+    .order{
+      margin-bottom: 60px;
+    }
+
     .btn-green{
       font-size: 1.15rem;
       padding: 20px 35px;
