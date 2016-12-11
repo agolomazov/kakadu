@@ -1,8 +1,9 @@
 .header {
   background-color: $white;
-  width: 100%;
   height: auto;
+  margin-bottom: 115px;
   position: relative;
+  width: 100%;
 }
 
 .header-wrapper {
@@ -68,6 +69,7 @@
 
 .hidden-nav {
   display: none;
+  position: absolute;
 }
 
 .navigation-menu {
@@ -223,6 +225,12 @@
     box-shadow: 1px 2px 15px #666;
     z-index: 100;
   }
+}
+
+@media all and (max-width: 720px){
+    .header{
+      margin-bottom: 60px;
+    }
 }
 
 @media all and (max-width: 590px) {

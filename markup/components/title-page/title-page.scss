@@ -1,1 +1,45 @@
+.title-page{
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
 
+.title-page-wrapper{
+  max-width: 1200px;
+  min-width: 290px;
+  margin: 0 20px;
+}
+
+.page-title{
+  color: $white;
+  font-family: $gothamMedium;
+  font-size: 3.125rem;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.title-row{
+  display: block;
+  margin-bottom: 10px;
+}
+
+@media all and (max-width: 720px){
+    .page-title{
+      font-size: 2.5rem;
+    }
+}
+
+@media all and (max-width: 540px){
+  .page-title{
+    font-size: 2rem;
+  }
+}
+
+@media all and (max-width: 440px){
+    .page-title{
+      font-size: 1.75rem;
+    }
+}
