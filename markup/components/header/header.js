@@ -5,6 +5,8 @@ $(document).ready(function(){
     var $hiddenMenu = $('.hidden-nav');
     var $headerBlock = $('.header');
     var $flagToggle = false;
+    var $toggleNav = $('.toggle-nav');
+    var $flagWrap = false;
 
     (function(){
         var $headerHeight = $headerBlock.height();
@@ -12,7 +14,7 @@ $(document).ready(function(){
         $hiddenMenu.append($menuClone).css('height', $windowHeight - $headerHeight);
     })();
 
-    $(document).on('click', '.toggle-nav', function(e){
+    $(document).on('click', $toggleNav, function(e){
         $headerBlock.toggleClass('active');
         $hiddenMenu.toggleClass('active');
         if(!$flagToggle){

@@ -1,13 +1,13 @@
-.header{
+.header {
   background-color: $white;
   width: 100%;
   height: auto;
   position: relative;
 }
 
-.header-wrapper{
+.header-wrapper {
   max-width: 1200px;
-  min-width: 320px;
+  min-width: 290px;
   margin: 0 auto;
   padding: 10px 0;
   display: flex;
@@ -17,13 +17,13 @@
   align-items: center;
 }
 
-.logo{
+.logo {
   height: 57px;
   width: 246px;
   margin-right: 20px;
 }
 
-.logo-link{
+.logo-link {
   display: flex;
   height: 100%;
   width: 100%;
@@ -32,11 +32,11 @@
   justify-content: center;
 }
 
-.logo-img{
+.logo-img {
   width: 100%;
 }
 
-.toggle-nav{
+.toggle-nav {
   background: transparent url(%=static=%assets/header/menu-icon.svg) no-repeat;
   background-position: 10px center;
   border: 1px solid $color-link;
@@ -49,39 +49,39 @@
   -o-transition: all .35s ease;
   transition: all .35s ease;
 
-  &:hover{
+  &:hover {
     background: $color-link-hover url(%=static=%assets/header/menu-icon-hover.svg) no-repeat;
     background-position: 10px center;
     border: 1px solid transparent;
     color: $white;
   }
 
-  &:active{
+  &:active {
     background-color: darken($color-link-hover, 10%);
   }
 
   &:active,
-  &:focus{
+  &:focus {
     outline: none;
   }
 }
 
-.hidden-nav{
+.hidden-nav {
   display: none;
 }
 
-.navigation-menu{
+.navigation-menu {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.navigation__item{
+.navigation__item {
   display: inline-block;
   margin-right: 25px;
 }
 
-.navigation__link{
+.navigation__link {
   color: $color-link;
   font-size: .875rem;
   font-family: $gothamMedium;
@@ -93,16 +93,16 @@
   -o-transition: all .35s ease;
   transition: all .35s ease;
 
-  &:hover{
+  &:hover {
     color: $color-link-hover;
   }
 }
 
-.contacts{
+.contacts {
   position: relative;
 }
 
-.phone{
+.phone {
   font-size: 1.3125rem;
   font-family: $gothamBold;
   font-weight: bold;
@@ -110,26 +110,26 @@
   text-transform: uppercase;
 }
 
-.phone-link{
+.phone-link {
   color: $color-link-hover;
   text-decoration: none;
 }
 
-.callback{
+.callback {
   font-family: $gothamRegular;
   font-size: .875rem;
 }
 
-.callback-js{
+.callback-js {
   color: $color-link;
   font-weight: normal;
 
-  &:hover{
+  &:hover {
     text-decoration: none;
   }
 }
 
-.shadow{
+.shadow {
   background: rgba(0, 0, 0, 0.45);
   height: 100vh;
   position: fixed;
@@ -138,50 +138,50 @@
   left: 0;
 }
 
-@media all and (max-width: 1240px){
-    .header-wrapper{
-      margin: 0 20px;
-    }
+@media all and (max-width: 1240px) {
+  .header-wrapper {
+    margin: 0 20px;
+  }
 }
 
-@media all and (max-width: 1060px){
-  .navigation__item{
+@media all and (max-width: 1060px) {
+  .navigation__item {
     margin-right: 15px;
   }
 }
 
-@media all and (max-width: 960px){
-    .logo{
-      width: 200px;
-    }
+@media all and (max-width: 960px) {
+  .logo {
+    width: 200px;
+  }
 
-    .phone-link{
-      font-size: 1.25rem;
-    }
+  .phone-link {
+    font-size: 1.25rem;
+  }
 }
 
-@media all and (max-width: 940px){
-    .nav{
-      display: none;
-    }
+@media all and (max-width: 940px) {
+  .nav {
+    display: none;
+  }
 
-    .logo{
-      order: 1;
-    }
+  .logo {
+    order: 1;
+  }
 
-    .contacts{
-      order: 2;
-    }
+  .contacts {
+    order: 2;
+  }
 
-    .navigation{
-      order: 3;
-    }
+  .navigation {
+    order: 3;
+  }
 
-    .toggle-nav{
-      display: block;
-    }
+  .toggle-nav {
+    display: block;
+  }
 
-  .hidden-nav{
+  .hidden-nav {
     background-color: $white;
     box-shadow: 5px 10px 20px #333;
     display: flex;
@@ -198,11 +198,11 @@
     -o-transition: all .5s ease;
     transition: all .5s ease;
 
-    .navigation-menu{
+    .navigation-menu {
       margin: 20px;
     }
 
-    .navigation__item{
+    .navigation__item {
       display: block;
       margin-bottom: 10px;
       font-size: 1.25rem;
@@ -219,9 +219,41 @@
     z-index: 50;
   }
 
+  .header.active {
+    box-shadow: 1px 2px 15px #666;
+    z-index: 100;
+  }
+}
 
-  .header.active{
-      box-shadow: 1px 2px 15px #666;
-      z-index: 100;
+@media all and (max-width: 590px) {
+  .btn-text {
+    display: none;
+  }
+
+  .toggle-nav {
+    display: block;
+    width: 35px;
+    height: 35px;
+    padding: 0 24px;
+  }
+}
+
+@media all and (max-width: 520px) {
+  .header-wrapper {
+    display: block;
+  }
+
+  .logo {
+    margin: 0 auto 20px;
+  }
+
+  .navigation {
+    float: right;
+    position: relative;
+    z-index: 40;
+  }
+
+  .contacts{
+    margin-bottom: 10px;
   }
 }
