@@ -5,6 +5,7 @@ $(document).ready(function () {
     var $hiddenMenu = $('.hidden-nav');
     var $headerBlock = $('.header');
     var $flagToggle = false;
+    new WOW().init();
 
     (function () {
         var $headerHeight = $headerBlock.height();

@@ -138,6 +138,7 @@
   width: 100vw;
   top: 0;
   left: 0;
+  z-index: 10;
 }
 
 @media all and (max-width: 1240px) {
@@ -199,6 +200,7 @@
     -moz-transition: all .5s ease;
     -o-transition: all .5s ease;
     transition: all .5s ease;
+    z-index: 10;
 
     .navigation-menu {
       margin: 20px;
@@ -263,5 +265,11 @@
 
   .contacts{
     margin-bottom: 10px;
+  }
+}
+
+@media all and (max-width: 440px){
+  .header{
+    margin-bottom: 30px;
   }
 }
