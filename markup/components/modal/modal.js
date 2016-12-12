@@ -28,6 +28,7 @@ $(document).ready(function(){
     $('#input-phone-js').inputmask("+7(999)999-99-99");
 
     $(document).on('click', '.callback-js', function (e) {
+        e.preventDefault();
         $('#modal-js').bPopup({
             closeClass: 'modal-close',
             modalColor: 'black'
