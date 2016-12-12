@@ -1,6 +1,11 @@
 // Common styles of the project
 
 html, body {
+    background: url(%=static=%assets/body/body-bg.jpg) no-repeat;
+    background-attachment: fixed;
+    background-position: center bottom;
+    -webkit-background-size: cover;
+    background-size: cover;
     font-family: $gothamRegular;
     font-size: 16px;
     height: 100%;
