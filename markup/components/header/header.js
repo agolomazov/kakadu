@@ -10,7 +10,7 @@ $(document).ready(function () {
     (function () {
         var $headerHeight = $headerBlock.height();
         var $windowHeight = $(window).height();
-        $hiddenMenu.append($menuClone).css({'height': $windowHeight - $headerHeight + 'px', top: $headerHeight + 'px'});
+        $hiddenMenu.append($menuClone).css({'height': $windowHeight, top: $headerHeight + 'px'});
     })();
 
     $(document).on('click', '.toggle-nav', function (e) {
