@@ -28,6 +28,17 @@
   margin-bottom: 10px;
 }
 
+@media all and (max-width: 940px){
+  .title-page{
+    position: relative;
+    margin-bottom: 40px;
+  }
+
+  .page-title{
+    visibility: visible;
+  }
+}
+
 @media all and (max-width: 860px){
     .page-title{
       font-size: 2.75rem;

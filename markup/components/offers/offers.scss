@@ -60,11 +60,14 @@
   .offer-item{
     width: 50%;
     margin-bottom: 40px;
+    visibility: visible;
   }
 
   .offers{
     margin-bottom: 60px;
   }
+
+
 }
 
 @media all and (max-width: 570px){

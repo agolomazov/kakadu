@@ -5,12 +5,19 @@ $(document).ready(function () {
     var $hiddenMenu = $('.hidden-nav');
     var $headerBlock = $('.header');
     var $flagToggle = false;
-    new WOW().init();
+    var $wow = new WOW();
+    var $wowInitFlag = false;
 
     (function () {
         var $headerHeight = $headerBlock.height();
         var $windowHeight = $(window).height();
+        var $windowWidth = $(window).width();
         $hiddenMenu.append($menuClone).css({'height': $windowHeight, top: $headerHeight + 'px'});
+
+        if($windowWidth > 940 && !$wowInitFlag){
+            $wow.init();
+            $wowInitFlag = $wowInitFlag;
+        }
     })();
 
     $(document).on('click', '.toggle-nav', function (e) {
@@ -39,6 +46,18 @@ $(document).ready(function () {
 
         if ($windowWidth < 940) {
             $hiddenMenu.css({'height': $windowHeight - $headerHeight + 'px', top: $headerHeight + 'px'});
+        }
+
+        if($windowWidth > 940){
+            if(!$wowInitFlag){
+                $wow.init();
+                $wowInitFlag = !$wowInitFlag;
+            }
+        } else {
+            if($wowInitFlag){
+                $wow.disabled();
+                $wowInitFlag = !$wowInitFlag;
+            }
         }
     });
 
