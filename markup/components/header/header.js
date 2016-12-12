@@ -14,6 +14,7 @@ $(document).ready(function () {
     })();
 
     $(document).on('click', '.toggle-nav', function (e) {
+        $('html').toggleClass('active');
         $headerBlock.toggleClass('active');
         $hiddenMenu.toggleClass('active');
         if (!$flagToggle) {

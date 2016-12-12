@@ -11,6 +11,10 @@ html, body {
     height: 100%;
 }
 
+html.active{
+    overflow: hidden;
+}
+
 .page {
     
 }
