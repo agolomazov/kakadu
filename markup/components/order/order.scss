@@ -26,6 +26,7 @@
   -moz-transition: all .35s ease;
   -o-transition: all .35s ease;
   transition: all .35s ease;
+  visibility: hidden;
 
   &:hover{
     background-color: darken($color-link-hover, 10%);
