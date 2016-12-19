@@ -1,14 +1,17 @@
 // Common styles of the project
 
 html, body {
+    font-family: $gothamRegular;
+    font-size: 16px;
+    height: 100%;
+}
+
+html{
     background: url(%=static=%assets/body/body-bg.jpg) no-repeat;
     background-attachment: fixed;
     background-position: center bottom;
     -webkit-background-size: cover;
     background-size: cover;
-    font-family: $gothamRegular;
-    font-size: 16px;
-    height: 100%;
 }
 
 html.active, html.active body{
@@ -33,7 +36,7 @@ html.active, html.active body{
 }
 
 @media all and (max-width: 940px){
-    html, body{
+    html{
         background: url(%=static=%assets/body/body-bg.jpg) no-repeat;
         background-attachment: fixed;
         -webkit-background-size: cover;
